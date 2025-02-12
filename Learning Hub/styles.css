@@ -1,0 +1,119 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1e1e1e;
+    color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Main container */
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Password input area */
+.password-container {
+    background-color: #2c2f38;
+    border-radius: 12px;
+    padding: 25px;
+    width: 100%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+/* Title and input styles */
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #e6e6e6;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 20px 0;
+    background-color: #1e1e1e;
+    border: none;
+    border-radius: 8px;
+    color: #e6e6e6;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    background-color: #3a3f48;
+}
+
+/* Strength bar styles */
+.strength-wrapper {
+    margin-top: 15px;
+}
+
+.strength-bar {
+    width: 100%;
+    height: 10px;
+    background-color: #333;
+    border-radius: 8px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.strength-indicator {
+    height: 100%;
+    width: 0;
+    background-color: #e2e2e2;
+    border-radius: 8px;
+    transition: width 0.4s ease-in-out;
+}
+
+/* Strength message */
+#strengthMessage {
+    font-size: 16px;
+    margin-top: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Password length text */
+#passwordLength {
+    font-size: 14px;
+    margin-top: 15px;
+    color: #aaa;
+}
+
+/* Password feedback */
+#passwordFeedback {
+    font-size: 14px;
+    color: #ccc;
+    margin-top: 15px;
+    text-align: left;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .password-container {
+        padding: 20px;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    input {
+        font-size: 14px;
+    }
+}
